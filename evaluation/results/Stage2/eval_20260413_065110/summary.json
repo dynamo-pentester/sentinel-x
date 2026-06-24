@@ -1,0 +1,16 @@
+{
+  "stages": [
+    {
+      "stage": 2,
+      "name": "CR0 Tamper",
+      "total": 100,
+      "detected": 100,
+      "tp_pct": 100.0,
+      "mean_ms": 1699.09,
+      "std_ms": 111.17,
+      "p50_ms": 1719.97,
+      "p95_ms": 1809.01
+    }
+  ],
+  "overall_tp_pct": 100.0
+}

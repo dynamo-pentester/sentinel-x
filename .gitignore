@@ -1,0 +1,59 @@
+# ── Secrets & credentials ─────────────────────────────────────────────────────
+.env
+!.env.example
+
+# ── Node keystore (private keys) ──────────────────────────────────────────────
+keystore/*_priv.pem
+keystore/*.key
+
+# ── Database & runtime state ──────────────────────────────────────────────────
+*.db
+*.db-shm
+*.db-wal
+sentinel_daemon.log
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# ── Kernel build artifacts ────────────────────────────────────────────────────
+*.o
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+*.order
+*.symvers
+.tmp_versions/
+Module.symvers
+modules.order
+*.cmd
+
+# ── Windows build artifacts ───────────────────────────────────────────────────
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.sys
+*.inf
+*.cat
+*.cer
+x64/
+Debug/
+Release/
+
+# ── IDE & OS ──────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db

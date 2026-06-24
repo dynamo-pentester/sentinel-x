@@ -1,0 +1,16 @@
+{
+  "stages": [
+    {
+      "stage": 8,
+      "name": "Ftrace Hook",
+      "total": 100,
+      "detected": 100,
+      "tp_pct": 100.0,
+      "mean_ms": 3.66,
+      "std_ms": 6.64,
+      "p50_ms": 2.77,
+      "p95_ms": 5.28
+    }
+  ],
+  "overall_tp_pct": 100.0
+}

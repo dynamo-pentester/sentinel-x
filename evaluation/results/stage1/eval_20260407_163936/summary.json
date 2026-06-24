@@ -1,0 +1,16 @@
+{
+  "stages": [
+    {
+      "stage": 1,
+      "name": "SCT Hook",
+      "total": 100,
+      "detected": 100,
+      "tp_pct": 100.0,
+      "mean_ms": 1651.37,
+      "std_ms": 150.76,
+      "p50_ms": 1657.28,
+      "p95_ms": 1805.41
+    }
+  ],
+  "overall_tp_pct": 100.0
+}

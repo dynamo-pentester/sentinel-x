@@ -1,0 +1,677 @@
+⚠️ Primary RPC not responding: your_infura_sepolia_rpc_url...
+🔄 Trying fallback RPC: https://rpc.sepolia.org...
+🔄 Trying fallback RPC: https://sepolia.gateway.tenderly.co...
+✅ Connected to fallback RPC: https://sepolia.gateway.tenderly.co...
+✅ Loaded contract ABI from /home/kali/Desktop/sentinel-x-final/src/../MILBASTERLog_abi.json
+❌ Contract initialization failed: ENS name: 'your_contract_address_here' is invalid.
+2026-04-05 14:11:47,225 [INFO] sentinel.daemon: Evidence pipeline loaded OK
+2026-04-05 14:11:47,228 [INFO] sentinel.daemon: DRY-RUN mode — no DB writes or blockchain
+2026-04-05 14:11:47,229 [INFO] sentinel.daemon: OS detected: LINUX
+2026-04-05 14:11:47,229 [INFO] sentinel.linux_bridge: Using /dev/kmsg as kernel log source
+2026-04-05 14:11:47,230 [INFO] sentinel.linux_bridge: Linux bridge started
+2026-04-05 14:11:47,230 [INFO] sentinel.daemon: ============================================================
+2026-04-05 14:11:47,230 [INFO] sentinel.daemon:   SENTINEL-X DAEMON RUNNING
+2026-04-05 14:11:47,230 [INFO] sentinel.daemon:   Node:     sentinel_node_1
+2026-04-05 14:11:47,230 [INFO] sentinel.daemon:   OS:       LINUX
+2026-04-05 14:11:47,230 [INFO] sentinel.daemon:   Dry-run:  True
+2026-04-05 14:11:47,230 [INFO] sentinel.daemon:   Evidence: True
+2026-04-05 14:11:47,230 [INFO] sentinel.daemon: ============================================================
+2026-04-05 14:11:47,231 [INFO] sentinel.daemon: Anchor worker started (interval=60s)
+2026-04-05 14:11:47,331 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MOD_TRACK module_name=sentinel_test_rootkit
+2026-04-05 14:11:47,633 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:11:47,633 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:11:47,633 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] DKOM_ALERT pid=80230
+2026-04-05 14:11:47,633 [INFO] sentinel.daemon: [DRY-RUN] Would persist: DKOM_ALERT
+2026-04-05 14:11:47,633 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] DKOM_ALERT pid=80231
+2026-04-05 14:11:47,633 [INFO] sentinel.daemon: [DRY-RUN] Would persist: DKOM_ALERT
+2026-04-05 14:11:55,703 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:11:55,704 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:11:55,704 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:12:01,709 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:12:01,710 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:12:01,710 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:12:05,736 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:12:05,736 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:12:05,736 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:12:09,820 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:12:09,820 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:12:09,820 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:12:13,815 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:12:13,815 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:12:13,815 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:12:17,818 [INFO] sentinel.daemon: 📊 Stats | uptime=30s | received=14 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:12:17,884 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:12:17,884 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:12:17,884 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:12:21,831 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:12:21,831 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:12:21,831 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:12:27,896 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:12:27,896 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:12:27,896 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:12:31,939 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:12:31,940 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:12:31,940 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:12:38,010 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:12:38,010 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:12:38,011 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:12:44,087 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:12:44,088 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:12:44,088 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:12:48,091 [INFO] sentinel.daemon: 📊 Stats | uptime=60s | received=26 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:12:50,047 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:12:50,047 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:12:50,047 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:12:56,181 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:12:56,182 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:12:56,182 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:13:02,237 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:13:02,238 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:13:02,238 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:13:06,266 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:13:06,266 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:13:06,267 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:13:12,264 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:13:12,265 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:13:12,265 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:13:16,303 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:13:16,303 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] CR0_RESTORED 
+2026-04-05 14:13:16,303 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:13:16,303 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:13:18,305 [INFO] sentinel.daemon: 📊 Stats | uptime=91s | received=39 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:13:22,305 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:13:22,305 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:13:22,305 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:13:26,356 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:13:26,356 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:13:26,357 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:13:34,476 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:13:34,477 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:13:34,477 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:13:38,526 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:13:38,526 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:13:38,528 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:13:46,503 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:13:46,504 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:13:46,504 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:13:48,504 [INFO] sentinel.daemon: 📊 Stats | uptime=121s | received=49 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:13:52,603 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:13:52,604 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:13:52,604 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:13:56,648 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:13:56,649 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:13:56,649 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:13:56,649 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] DKOM_ALERT pid=83950
+2026-04-05 14:13:56,649 [INFO] sentinel.daemon: [DRY-RUN] Would persist: DKOM_ALERT
+2026-04-05 14:13:56,649 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] DKOM_ALERT pid=83948
+2026-04-05 14:13:56,649 [INFO] sentinel.daemon: [DRY-RUN] Would persist: DKOM_ALERT
+2026-04-05 14:13:56,649 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] DKOM_ALERT pid=83949
+2026-04-05 14:13:56,649 [INFO] sentinel.daemon: [DRY-RUN] Would persist: DKOM_ALERT
+2026-04-05 14:14:02,630 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:14:02,630 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:14:02,630 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:14:06,667 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:14:06,667 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:14:06,668 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:14:10,708 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:14:10,708 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:14:10,708 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:14:14,771 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:14:14,771 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:14:14,772 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:14:18,773 [INFO] sentinel.daemon: 📊 Stats | uptime=151s | received=64 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:14:18,793 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:14:18,794 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:14:18,795 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:14:24,845 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:14:24,845 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:14:24,845 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:14:28,888 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:14:28,888 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:14:28,888 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:14:34,880 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:14:34,881 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:14:34,881 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:14:41,013 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:14:41,014 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:14:41,014 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:14:41,014 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] DKOM_ALERT pid=85201
+2026-04-05 14:14:41,014 [INFO] sentinel.daemon: [DRY-RUN] Would persist: DKOM_ALERT
+2026-04-05 14:14:41,014 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] DKOM_ALERT pid=85202
+2026-04-05 14:14:41,014 [INFO] sentinel.daemon: [DRY-RUN] Would persist: DKOM_ALERT
+2026-04-05 14:14:41,014 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] DKOM_ALERT pid=85203
+2026-04-05 14:14:41,014 [INFO] sentinel.daemon: [DRY-RUN] Would persist: DKOM_ALERT
+2026-04-05 14:14:47,035 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:14:47,035 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:14:47,035 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:14:49,039 [INFO] sentinel.daemon: 📊 Stats | uptime=181s | received=79 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:14:51,019 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:14:51,019 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:14:51,019 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:14:57,146 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:14:57,147 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:14:57,147 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:15:01,102 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:15:01,102 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:15:01,102 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:15:07,207 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:15:07,207 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:15:07,207 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:15:07,207 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] DKOM_ALERT pid=86079
+2026-04-05 14:15:07,207 [INFO] sentinel.daemon: [DRY-RUN] Would persist: DKOM_ALERT
+2026-04-05 14:15:07,207 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] DKOM_ALERT pid=86080
+2026-04-05 14:15:07,207 [INFO] sentinel.daemon: [DRY-RUN] Would persist: DKOM_ALERT
+2026-04-05 14:15:13,261 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:15:13,261 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:15:13,261 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:15:17,228 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:15:17,228 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:15:17,228 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:15:19,230 [INFO] sentinel.daemon: 📊 Stats | uptime=212s | received=93 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:15:23,339 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:15:23,340 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:15:23,340 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:15:27,341 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:15:27,341 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:15:27,341 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:15:33,384 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:15:33,385 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:15:33,385 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:15:39,445 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:15:39,446 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:15:39,446 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:15:43,581 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:15:43,581 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:15:43,581 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:15:49,511 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:15:49,511 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:15:49,511 [INFO] sentinel.daemon: 📊 Stats | uptime=242s | received=104 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:15:49,511 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:15:55,606 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:15:55,607 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:15:55,607 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:15:59,580 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:15:59,580 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:15:59,581 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:16:05,642 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:16:05,643 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:16:05,643 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:16:11,724 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:16:11,724 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:16:11,724 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:16:15,724 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:16:15,724 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:16:15,724 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:16:19,711 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:16:19,712 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:16:19,712 [INFO] sentinel.daemon: 📊 Stats | uptime=272s | received=116 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:16:19,712 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:16:25,820 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:16:25,821 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:16:25,821 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:16:29,856 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:16:29,856 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:16:29,856 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:16:31,841 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:16:31,841 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:16:31,841 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:16:35,881 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:16:35,882 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:16:35,882 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:16:37,900 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:16:37,900 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:16:37,900 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:16:41,924 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:16:41,925 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:16:41,925 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:16:47,991 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:16:47,992 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:16:47,992 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:16:49,993 [INFO] sentinel.daemon: 📊 Stats | uptime=302s | received=131 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:16:51,965 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:16:51,966 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:16:51,966 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:16:56,017 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:16:56,017 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:16:56,017 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:17:00,053 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:17:00,053 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:17:00,053 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:17:02,065 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:17:02,065 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:17:02,065 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:17:06,129 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:17:06,130 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:17:06,130 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:17:12,127 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:17:12,127 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:17:12,127 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:17:16,245 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:17:16,245 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:17:16,245 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:17:18,207 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:17:18,207 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:17:18,207 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:17:20,216 [INFO] sentinel.daemon: 📊 Stats | uptime=332s | received=147 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:17:24,296 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:17:24,296 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:17:24,296 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:17:26,239 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:17:26,239 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:17:26,239 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:17:32,331 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:17:32,331 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:17:32,331 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:17:34,389 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:17:34,389 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:17:34,389 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:17:42,444 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:17:42,444 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:17:42,444 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:17:48,462 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:17:48,462 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:17:48,462 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:17:50,465 [INFO] sentinel.daemon: 📊 Stats | uptime=363s | received=159 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:17:54,468 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:17:54,468 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:17:54,468 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:18:00,572 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:18:00,572 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:18:00,573 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:18:06,615 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:18:06,615 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:18:06,615 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:18:10,641 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:18:10,641 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:18:10,641 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:18:14,679 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:18:14,679 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:18:14,680 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:18:18,665 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:18:18,666 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:18:18,666 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:18:20,676 [INFO] sentinel.daemon: 📊 Stats | uptime=393s | received=171 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:18:26,764 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:18:26,764 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:18:26,764 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:18:28,805 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:18:28,806 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:18:28,806 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:18:34,801 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:18:34,801 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:18:34,801 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:18:36,871 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:18:36,871 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:18:36,871 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:18:42,869 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:18:44,891 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:18:44,892 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:18:48,961 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:18:48,961 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:18:48,961 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:18:50,962 [INFO] sentinel.daemon: 📊 Stats | uptime=423s | received=183 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:18:54,992 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:18:54,993 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:18:54,993 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:18:59,019 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:18:59,019 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:18:59,019 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:19:05,024 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:19:05,024 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:19:05,024 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:19:09,107 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:19:09,107 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:19:09,107 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:19:13,091 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:19:13,092 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:19:13,092 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:19:15,125 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:19:15,125 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:19:15,126 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:19:21,137 [INFO] sentinel.daemon: 📊 Stats | uptime=453s | received=195 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:19:21,206 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:19:21,207 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:19:21,207 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:19:23,223 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:19:23,223 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:19:23,224 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:19:29,246 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:19:29,246 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:19:29,246 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:19:33,271 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:19:33,272 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:19:33,272 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:19:39,330 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:19:39,331 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:19:39,331 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:19:45,413 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:19:45,413 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:19:45,413 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:19:51,452 [INFO] sentinel.daemon: 📊 Stats | uptime=484s | received=207 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:19:53,471 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:19:53,471 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:19:53,471 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:19:55,504 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:19:55,504 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:19:55,504 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:19:59,456 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:19:59,457 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:19:59,457 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:19:59,457 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] DKOM_ALERT pid=94308
+2026-04-05 14:19:59,457 [INFO] sentinel.daemon: [DRY-RUN] Would persist: DKOM_ALERT
+2026-04-05 14:20:03,530 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:20:03,531 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:20:03,531 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:20:07,599 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:20:07,599 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:20:07,599 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:20:11,628 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:20:11,628 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:20:11,628 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:20:17,637 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:20:17,637 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:20:17,637 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:20:21,640 [INFO] sentinel.daemon: 📊 Stats | uptime=514s | received=222 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:20:21,696 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:20:21,697 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:20:21,697 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:20:25,751 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:20:25,752 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:20:25,752 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:20:31,743 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:20:31,743 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:20:31,743 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:20:37,833 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:20:37,834 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:20:37,834 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:20:41,838 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:20:41,838 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:20:41,838 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:20:51,846 [INFO] sentinel.daemon: 📊 Stats | uptime=544s | received=232 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:20:59,984 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:20:59,984 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:20:59,984 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:21:03,965 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:21:03,965 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:21:03,966 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:21:08,023 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:21:08,023 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:21:08,024 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:21:12,048 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:21:12,048 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:21:12,048 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:21:16,060 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:21:16,060 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:21:16,060 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:21:18,088 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:21:18,088 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:21:18,089 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:21:22,105 [INFO] sentinel.daemon: 📊 Stats | uptime=574s | received=244 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:21:24,176 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:21:24,176 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:21:24,176 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:21:28,205 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:21:28,205 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:21:28,205 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:21:32,240 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:21:32,240 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:21:32,240 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:21:34,259 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:21:34,259 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:21:34,259 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:21:38,296 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:21:38,296 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:21:38,296 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:21:46,319 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:21:46,319 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:21:46,319 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:21:52,323 [INFO] sentinel.daemon: 📊 Stats | uptime=605s | received=256 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:21:52,386 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:21:52,387 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:21:52,387 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:21:58,408 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:21:58,408 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:21:58,408 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:22:02,500 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:22:02,500 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:22:02,500 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:22:10,547 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:22:10,547 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:22:10,548 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:22:14,570 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:22:14,571 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:22:14,571 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:22:18,630 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:22:18,630 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:22:18,630 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:22:22,635 [INFO] sentinel.daemon: 📊 Stats | uptime=635s | received=268 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:22:22,667 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:22:22,667 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:22:22,667 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:22:24,643 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:22:24,643 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:22:24,643 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:22:28,668 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:22:28,668 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:22:28,668 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:22:32,715 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:22:32,715 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:22:32,716 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:22:36,819 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:22:36,820 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:22:36,820 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:22:42,825 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:22:42,825 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:22:42,825 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:22:46,800 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:22:46,801 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:22:46,801 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:22:52,809 [INFO] sentinel.daemon: 📊 Stats | uptime=665s | received=282 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:22:52,950 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:22:52,950 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:22:52,951 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:22:59,002 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:22:59,003 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:22:59,003 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:23:00,995 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:23:00,995 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:23:00,996 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:23:05,020 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:23:05,021 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:23:05,021 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:23:07,071 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:23:07,071 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:23:07,072 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:23:11,046 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:23:13,061 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:23:13,061 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:23:15,090 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:23:15,090 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:23:15,091 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:23:19,102 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:23:19,103 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:23:19,103 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:23:21,141 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:23:21,141 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:23:21,141 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:23:23,143 [INFO] sentinel.daemon: 📊 Stats | uptime=695s | received=300 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:23:29,153 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:23:29,154 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:23:29,154 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:23:35,230 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:23:35,231 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:23:35,231 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:23:39,291 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:23:39,291 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:23:39,291 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:23:43,303 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:23:43,304 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:23:43,304 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:23:47,347 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:23:47,347 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:23:47,347 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:23:51,349 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:23:51,349 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:23:51,349 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:23:53,355 [INFO] sentinel.daemon: 📊 Stats | uptime=726s | received=312 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:23:55,368 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:23:57,395 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:23:57,395 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:24:01,425 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:24:01,425 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:24:01,425 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:24:05,520 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:24:05,520 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:24:05,520 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:24:07,547 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:24:07,547 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:24:07,547 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:24:13,509 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:24:13,510 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:24:13,510 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:24:17,539 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:24:17,540 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:24:17,540 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:24:23,549 [INFO] sentinel.daemon: 📊 Stats | uptime=756s | received=324 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:24:23,671 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:24:23,671 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:24:23,671 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:24:25,632 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:24:25,632 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:24:25,632 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:24:29,710 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:24:29,710 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:24:29,710 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:24:35,715 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:24:35,716 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:24:35,716 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:24:39,770 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:24:39,770 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:24:39,770 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:24:43,827 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:24:43,827 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:24:43,827 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:24:47,839 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:24:47,840 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:24:47,840 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:24:51,840 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:24:51,840 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:24:51,840 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:24:53,842 [INFO] sentinel.daemon: 📊 Stats | uptime=786s | received=340 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:24:55,929 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:24:55,929 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:24:55,929 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:25:01,894 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:25:01,895 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:25:01,895 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:25:05,972 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:25:05,972 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:25:05,972 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:25:08,005 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:25:08,006 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:25:08,006 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:25:11,997 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:25:11,998 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:25:11,998 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:25:16,084 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:25:16,084 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:25:16,084 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:25:20,105 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:25:20,105 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:25:20,105 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:25:24,078 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:25:24,079 [INFO] sentinel.daemon: 📊 Stats | uptime=816s | received=355 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:25:24,079 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:25:24,079 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:25:30,142 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:25:30,142 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:25:30,142 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:25:32,124 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:25:32,224 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:25:32,225 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:25:36,173 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:25:36,173 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:25:36,173 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:25:40,207 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:25:40,207 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:25:40,207 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:25:44,293 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:25:44,293 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:25:44,293 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:25:46,261 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:25:46,261 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:25:46,261 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:25:50,308 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:25:50,308 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:25:50,308 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:25:52,368 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:25:52,368 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:25:52,369 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:25:54,372 [INFO] sentinel.daemon: 📊 Stats | uptime=847s | received=372 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:25:56,385 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:25:56,386 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:25:56,386 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:25:58,379 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:25:58,379 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:25:58,379 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:26:04,474 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:26:04,474 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:26:04,474 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:26:08,447 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:26:08,448 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:26:08,448 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:26:12,447 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:26:12,447 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:26:12,447 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:26:16,538 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:26:16,538 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:26:16,538 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:26:20,534 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:26:20,535 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:26:20,535 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:26:24,547 [INFO] sentinel.daemon: 📊 Stats | uptime=877s | received=386 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:26:24,597 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:26:24,597 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:26:24,597 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:26:28,581 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:26:28,581 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:26:28,581 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:26:30,637 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:26:30,637 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:26:30,637 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:26:34,720 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:26:34,720 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:26:34,721 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:26:42,710 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:26:42,711 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:26:42,711 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:26:46,743 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:26:46,743 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:26:46,743 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:26:52,824 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:26:52,824 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:26:52,824 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:26:54,825 [INFO] sentinel.daemon: 📊 Stats | uptime=907s | received=400 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:26:56,860 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:26:56,860 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:26:56,860 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:27:00,880 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:27:00,881 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:27:00,881 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:27:06,884 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:27:06,885 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:27:06,885 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:27:10,951 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:27:10,951 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:27:10,951 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:27:14,988 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] SCT_HOOK syscall_nr=62 | expected=0000000023c93bf7 | got=00000000b9a71652 | symbol=fake_kill+0x0/0x40 [sentinel_test_rootkit]
+2026-04-05 14:27:14,988 [INFO] sentinel.daemon: [DRY-RUN] Would persist: SCT_HOOK
+2026-04-05 14:27:14,988 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] MODULE_RESTORED module_name=sentinel_test_rootkit
+2026-04-05 14:27:19,046 [WARNING] sentinel.daemon: ℹ️  [LINUX][INFO] SCT_RESTORED syscall_nr=62
+2026-04-05 14:27:19,046 [WARNING] sentinel.daemon: 🚨 [LINUX][CRITICAL] MODULE_HIDDEN module_name=sentinel_test_rootkit
+2026-04-05 14:27:19,046 [INFO] sentinel.daemon: [DRY-RUN] Would persist: MODULE_HIDDEN
+2026-04-05 14:27:21,857 [INFO] sentinel.daemon: Signal 15 received — shutting down...
+2026-04-05 14:27:22,048 [INFO] sentinel.daemon: Shutting down...
+2026-04-05 14:27:22,085 [INFO] sentinel.linux_bridge: Linux bridge stopped
+2026-04-05 14:27:22,086 [INFO] sentinel.daemon: 📊 Stats | uptime=934s | received=412 | persisted=0 | anchors=0 | errors=0
+2026-04-05 14:27:22,086 [INFO] sentinel.daemon: SENTINEL-X daemon stopped.

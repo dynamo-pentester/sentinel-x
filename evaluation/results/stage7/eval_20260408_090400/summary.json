@@ -1,0 +1,16 @@
+{
+  "stages": [
+    {
+      "stage": 7,
+      "name": "Netfilter Hook",
+      "total": 100,
+      "detected": 100,
+      "tp_pct": 100.0,
+      "mean_ms": 2.98,
+      "std_ms": 1.07,
+      "p50_ms": 2.75,
+      "p95_ms": 4.36
+    }
+  ],
+  "overall_tp_pct": 100.0
+}

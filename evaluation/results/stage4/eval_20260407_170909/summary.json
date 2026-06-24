@@ -1,0 +1,16 @@
+{
+  "stages": [
+    {
+      "stage": 4,
+      "name": "Prologue Hook",
+      "total": 100,
+      "detected": 100,
+      "tp_pct": 100.0,
+      "mean_ms": 1674.92,
+      "std_ms": 112.97,
+      "p50_ms": 1681.8,
+      "p95_ms": 1799.67
+    }
+  ],
+  "overall_tp_pct": 100.0
+}

@@ -1,0 +1,159 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "eventHash",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint8",
+        "name": "anomalyType",
+        "type": "uint8"
+      },
+      {
+        "indexed": false,
+        "internalType": "int16",
+        "name": "trustDelta",
+        "type": "int16"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "reporter",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "ts",
+        "type": "uint256"
+      }
+    ],
+    "name": "LogAdded",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "eventHash",
+        "type": "string"
+      },
+      {
+        "internalType": "uint8",
+        "name": "anomalyType",
+        "type": "uint8"
+      },
+      {
+        "internalType": "int16",
+        "name": "trustDelta",
+        "type": "int16"
+      }
+    ],
+    "name": "addLog",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "count",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "getLog",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "ts",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "eventHash",
+        "type": "string"
+      },
+      {
+        "internalType": "uint8",
+        "name": "anomalyType",
+        "type": "uint8"
+      },
+      {
+        "internalType": "int16",
+        "name": "trustDelta",
+        "type": "int16"
+      },
+      {
+        "internalType": "address",
+        "name": "reporter",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "logs",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "ts",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "eventHash",
+        "type": "string"
+      },
+      {
+        "internalType": "uint8",
+        "name": "anomalyType",
+        "type": "uint8"
+      },
+      {
+        "internalType": "int16",
+        "name": "trustDelta",
+        "type": "int16"
+      },
+      {
+        "internalType": "address",
+        "name": "reporter",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

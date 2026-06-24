@@ -1,0 +1,16 @@
+{
+  "stages": [
+    {
+      "stage": 3,
+      "name": "LSTAR Tamper",
+      "total": 100,
+      "detected": 100,
+      "tp_pct": 100.0,
+      "mean_ms": 4305.86,
+      "std_ms": 22592.62,
+      "p50_ms": 2017.87,
+      "p95_ms": 2114.14
+    }
+  ],
+  "overall_tp_pct": 100.0
+}

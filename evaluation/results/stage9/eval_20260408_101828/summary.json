@@ -1,0 +1,16 @@
+{
+  "stages": [
+    {
+      "stage": 9,
+      "name": "DKOM",
+      "total": 100,
+      "detected": 100,
+      "tp_pct": 100.0,
+      "mean_ms": 5095.87,
+      "std_ms": 802.14,
+      "p50_ms": 5010.19,
+      "p95_ms": 5046.4
+    }
+  ],
+  "overall_tp_pct": 100.0
+}
