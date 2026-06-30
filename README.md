@@ -1,270 +1,236 @@
-# SENTINEL-X
+<div align="center">
 
-**Cross-Platform Kernel Integrity Monitor with Blockchain-Anchored Forensic Evidence**
+<img src="https://capsule-render.vercel.app/api?type=venom&height=320&text=RISHIKESH%20R&fontSize=80&color=0:00ff88,50:00d4ff,100:7b2fff&fontColor=ffffff&animation=twinkling&stroke=00ff88&strokeWidth=3&desc=Security%20Researcher%20%E2%80%A2%20Kernel%20Engineer%20%E2%80%A2%20CTF%20Hunter&descSize=20&descAlignY=80&descColor=aaffdd" />
 
-> Research prototype — Ramco Institute of Technology, Dept. of CSE  
-> Paper: *SENTINEL-X: A Cross-Platform Kernel Integrity Monitor with Verifiable Blockchain-Anchored Forensic Evidence* (under review)
+</div>
 
----
+<div align="center">
 
-## What it does
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=800&size=20&duration=2500&pause=800&color=00FF88&center=true&vCenter=true&repeat=true&width=700&height=45&lines=%24+whoami+%3E+0x_Dynamo+%7C+Security+Researcher;Kernel+Whisperer.+Root+Seeker.+Threat+Neutralizer.;%F0%9F%A5%87+IndiaSkills+2026+%E2%80%94+Medallion+of+Excellence;%F0%9F%8C+TryHackMe+Top+5%25+Globally+%7C+Rank+%2344+@+Apoorv+CTF;break();+patch();+secure();+repeat();)](https://git.io/typing-svg)
 
-Kernel rootkits operating at Ring-0 defeat conventional scanners through a simple race: install, operate, and remove artefacts within one scan interval. SENTINEL-X closes this race with a **dual-layer architecture**:
+</div>
 
-- **Synchronous layer** — kprobe/kretprobe handlers fire on the first offending kernel function invocation, independent of any timer. Detection latency: **< 5 ms** (p95) for four attack classes.
-- **Periodic layer** — `guard_tick()` enforces nine structural kernel invariants on a 2-second cycle, covering attacks that require observation over time.
-- **Evidence pipeline** — every detection is ECDSA-P256 signed, AES-256-GCM encrypted, Merkle-batched, and anchored to an Ethereum Sepolia smart contract for tamper-evident third-party audit.
+<br/>
 
-**Evaluation results (n=100 trials per stage):** 100% true-positive rate across all 9 Linux attack stages and 2 Windows stages. False-positive rate: 2.0%, confined to a documented `do_task_dead()` kernel-thread exit path.
+<div align="center">
 
----
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230d1117?style=for-the-badge&logo=linkedin&logoColor=00ff88)](https://linkedin.com/in/rishikesh-r-196b5a290)
+[![Portfolio](https://img.shields.io/badge/Portfolio-%230d1117?style=for-the-badge&logo=vercel&logoColor=00ff88)](https://rishikesh-r.vercel.app)
+[![Medium](https://img.shields.io/badge/Medium%20@0x__Dynamo-%230d1117?style=for-the-badge&logo=medium&logoColor=00ff88)](https://medium.com/@0x_Dynamo)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe_Top_5%25-%230d1117?style=for-the-badge&logo=tryhackme&logoColor=00ff88)](https://tryhackme.com/p/0xDynamo)
+[![GitHub](https://img.shields.io/badge/GitHub-%230d1117?style=for-the-badge&logo=github&logoColor=00ff88)](https://github.com/dynamo-pentester)
 
-## Architecture
+</div>
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│  KERNEL SPACE (Ring 0)                                          │
-│                                                                 │
-│  sentinelx.ko (Linux, kernel 6.18)                             │
-│    Periodic layer:  guard_tick() every 2s                       │
-│      SCT baseline diff, CR0 read, LSTAR rdmsr,                 │
-│      FNV-1a prologue hash, task-list walk (DKOM)               │
-│    Synchronous layer: kprobe / kretprobe                        │
-│      commit_creds, nf_register_*, register_ftrace_*,           │
-│      do_init_module, wake_up_new_task, do_exit                 │
-│                                                                 │
-│  ksentinel.sys (Windows 10 x64, KMDF)                          │
-│    SSDT scanner: 489 entries vs ntoskrnl bounds                │
-│    PE image scanner: MZ/PE walk across 1,927 MB                │
-└──────────────┬──────────────────────────────────────────────────┘
-               │ /dev/kmsg  (Linux)
-               │ IOCTL_READ_EVENT  (Windows)
-┌──────────────▼──────────────────────────────────────────────────┐
-│  USER SPACE                                                     │
-│  sentinel_daemon.py                                             │
-│    LinuxBridge / WindowsBridge → event_parser.py               │
-│    → evidence_manager.py                                        │
-│         ECDSA-P256 sign → AES-256-GCM encrypt                  │
-│         → SHA-256 Merkle tree (batch=32)                       │
-│         → Ethereum Sepolia smart contract anchor               │
-│    → SQLite (sentinel.db)                                       │
-└─────────────────────────────────────────────────────────────────┘
-```
+<br/>
 
 ---
 
-## Detection Coverage
-
-### Linux (kernel 6.18)
-
-| Stage | Attack | Method | Layer | Mean latency |
-|-------|--------|--------|-------|-------------|
-| S1 | SCT Hook | Baseline diff | Periodic | 1,651 ms |
-| S2 | CR0 WP Tamper | Per-CPU `read_cr0()` | Periodic | 1,699 ms |
-| S3 | LSTAR Tamper | `rdmsr(MSR_LSTAR)` | Periodic | 2,035 ms |
-| S4 | Prologue Hook | FNV-1a hash | Periodic | 1,675 ms |
-| S5 | Module Hide | kretprobe on `do_init_module` | Sync | 137 ms |
-| S6 | Priv. Escalation | kprobe on `commit_creds` | Sync | 2.5 ms |
-| S7 | Netfilter Hook | kprobe on `nf_register_*` | Sync | 3.0 ms |
-| S8 | ftrace Hook | kprobe on `register_ftrace_*` | Sync | 3.7 ms |
-| S9 | DKOM | kprobe + periodic poll | Hybrid | 5,096 ms |
-
-### Windows (10 x64, 22H2)
-
-| Stage | Attack | Method | Mean latency |
-|-------|--------|--------|-------------|
-| W1 | SSDT Hook (NtYieldExecution) | SSDT entry bounds check | 9,811 ms |
-| W2 | DKOM via ZwQSI hook | SSDT scanner | Verified† |
-| W3 | Driver Hide (PsLoadedModuleList unlink) | PE image scan | 5,836 ms |
-
-† W2 triggers a PatchGuard bugcheck (0x109) before the eval harness can record latency. Detection confirmed via post-reboot WAL recovery from `sentinel.db`.
-
----
-
-## Repository Structure
-
-```
-sentinel-x/
-├── sentinelx/               # Linux LKM source (sentinelx.c, Makefile)
-├── sentinelx-windows/       # Windows KMDF driver (driver.c, dkom.c, ssdt.c)
-├── rootkit-test/            # Linux test rootkit (sentinel_test_rootkit.c)
-├── sentinel-test-windows/   # Windows test driver (sentinel_test_win.c)
-├── bridge/                  # OS bridge layer
-│   ├── linux_bridge.py      # /dev/kmsg reader
-│   ├── windows_bridge.py    # IOCTL_READ_EVENT poller
-│   ├── event_parser.py      # KernelEvent schema parser
-│   └── os_detector.py
-├── src/                     # Evidence pipeline
-│   ├── evidence_manager.py  # Sign + encrypt + Merkle + anchor
-│   ├── crypto_utils.py      # ECDSA-P256, AES-256-GCM, HKDF
-│   ├── db_utils.py          # SQLite schema and queries
-│   ├── merkle_utils.py      # SHA-256 Merkle tree
-│   └── web3_utils.py        # Sepolia Web3 + contract interaction
-├── evaluation/              # Eval scripts and results
-│   ├── run_linux_eval.sh
-│   ├── run_windows_eval.ps1
-│   ├── analyze_results.py
-│   └── results/             # CSV + summary files per stage
-├── sentinel_daemon.py       # Unified daemon (Linux + Windows)
-├── deploy_contract.py       # MILBASTERLog Solidity contract deploy
-├── check.py                 # Blockchain verification tool
-├── setup.sh                 # Automated setup (Ubuntu/Kali)
-├── MILBASTERLog_abi.json    # Smart contract ABI
-├── .env.example             # Config template
-└── requirements.txt
-```
-
----
-
-## Quick Start
-
-### Prerequisites
-
-- **Linux:** Kali 2025 / Ubuntu 24.04, kernel 6.17–6.18, kernel headers, Python 3.10+
-- **Windows:** Windows 10 x64 (22H2), WDK, test-signing enabled, VirtualBox recommended
-
-### Linux Setup
+<img align="right" width="42%" src="https://github-readme-stats.vercel.app/api?username=dynamo-pentester&show_icons=true&theme=chartreuse-dark&bg_color=0d1117&border_color=00ff88&icon_color=00ff88&title_color=00b4d8&text_color=c9d1d9&ring_color=00ff88&hide_border=false&count_private=true" />
 
 ```bash
-# 1. Clone and install Python dependencies
-git clone https://github.com/dynamo-pentester/sentinel-x.git
-cd sentinel-x
-pip install -r requirements.txt
-
-# 2. Configure environment
-cp .env.example .env
-# Edit .env — add your Infura/Alchemy RPC URL and Ethereum key
-
-# 3. Build the LKM
-cd sentinelx
-make
-cd ..
-
-# 4. Load the monitor
-sudo insmod sentinelx/sentinelx.ko
-
-# 5. Start the daemon
-sudo python3 sentinel_daemon.py
-
-# Watch alerts in real time (separate terminal)
-sudo dmesg -w | grep sentinelx
+┌─────────────────────────────────────────────┐
+│        /root/rishikesh — ONLINE 🟢           │
+├─────────────────────────────────────────────┤
+│  ALIAS    ❯  0x_Dynamo                       │
+│  ROLE     ❯  Security Researcher             │
+│  BASE     ❯  India 🇮🇳                       │
+│  MISSION  ❯  Break it. Fix it. Secure it.    │
+│  THM RANK ❯  Top 5% Global 🌍               │
+│  CTF      ❯  Apoorv 2026 — Rank #44 WW       │
+│  MEDAL    ❯  IndiaSkills 2026 🥇              │
+│  STATUS   ❯  ████████████ ACTIVE THREAT 🔴   │
+└─────────────────────────────────────────────┘
 ```
 
-### Windows Setup
+- 🔭 Building **[SENTINEL-X](https://github.com/dynamo-pentester/sentinel-x)** — Cross-Platform Kernel Rootkit Detector
+- 🛡️ Certs: **AppSec · Network Security · Cybersecurity Analyst · Ubuntu Pro**
+- ✍️ Writing on **[Medium @0x\_Dynamo](https://medium.com/@0x_Dynamo)**
+- 📬 **rishikesh091105@gmail.com**
+- 🌐 **[rishikesh-r.vercel.app](https://rishikesh-r.vercel.app)**
 
-See [`sentinelx-windows/README_BUILD.txt`](sentinelx-windows/README_BUILD.txt) for driver build instructions.
+<br clear="right"/>
 
-Run the daemon as Administrator:
-```powershell
-python sentinel_daemon.py
+---
+
+## ⚡ ACTIVE OPERATION
+
 ```
-
-### Verify blockchain anchoring
-
-```bash
-python3 check.py
+╔══════════════════════════════════════════════════════════════════════╗
+║  [SENTINEL-X] — Cross-Platform Kernel Integrity Monitor              ║
+║                                                                      ║
+║  ◈ Detects  : SCT/SSDT hooks • DKOM hiding • CR0/LSTAR manipulation  ║
+║  ◈ Pipeline : Ed25519 signing → AES-GCM → Merkle batching            ║
+║  ◈ Anchored : Solidity/Web3.py blockchain forensic audit trail        ║
+║                                                                      ║
+║  PROGRESS  ██████████████████████░░  92% ──► PRODUCTION              ║
+╚══════════════════════════════════════════════════════════════════════╝
 ```
 
 ---
 
-## Running the Evaluation
+## 🧰 ARSENAL
 
-### Linux (100 runs per stage, all stages)
+<div align="center">
 
-```bash
-cd evaluation/
-sudo bash run_linux_eval.sh
-python3 analyze_results.py          # generates LaTeX table + summary
+[![Skills](https://skillicons.dev/icons?i=c,cpp,python,rust,linux,bash,docker,kubernetes,git,github,react,nextjs,nodejs,fastapi,flask,django,mongodb,postgresql,mysql,sqlite,figma,tensorflow&perline=11)](https://skillicons.dev)
+
+</div>
+
+<br/>
+
+<div align="center">
+
+| Domain | Tools & Tech |
+|--------|-------------|
+| 🔴 **Offensive Security** | Burp Suite • Metasploit • Nmap • SQLmap • Wireshark • Volatility |
+| 🟣 **Kernel / Systems** | Linux LKM • kprobes • Netlink • Syscall Internals • Windows KMDF |
+| 🔵 **Backend & APIs** | FastAPI • Flask • PostgreSQL • MongoDB • REST APIs • Docker |
+| 🟢 **Crypto & Blockchain** | AES-GCM • Ed25519 • Web3.py • Solidity • Merkle Trees |
+| 🟡 **Forensics & Analysis** | Digital Forensics • Log Analysis • PCAP • OSINT • CTF |
+| ⚪ **Platforms** | Kali Linux • Ubuntu • VMware • Git • AWS |
+
+</div>
+
+---
+
+## 📊 STATS & STREAKS
+
+<div align="center">
+
+<img src="https://github-readme-streak-stats.herokuapp.com?user=dynamo-pentester&theme=chartreuse-dark&background=0d1117&border=00ff88&stroke=00ff88&ring=00b4d8&fire=00ff88&currStreakNum=ffffff&sideNums=ffffff&currStreakLabel=00b4d8&sideLabels=00b4d8&dates=aaffdd" width="49%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=dynamo-pentester&layout=compact&theme=chartreuse-dark&bg_color=0d1117&border_color=00ff88&title_color=00b4d8&text_color=c9d1d9&langs_count=8" width="49%" />
+
+</div>
+
+<br/>
+
+<div align="center">
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=dynamo-pentester&bg_color=0d1117&color=00ff88&line=00b4d8&point=00ff88&area=true&area_color=00ff8820&hide_border=false&border_color=00ff88&custom_title=Commit+Activity+Graph" width="98%" />
+
+</div>
+
+---
+
+## 🐍 CONTRIBUTION MAP
+
+<div align="center">
+
+<!-- Snake activates once you run: Actions → Generate Snake → Run workflow -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/dynamo-pentester/dynamo-pentester/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/dynamo-pentester/dynamo-pentester/output/github-snake.svg" />
+  <img alt="github contribution snake" src="https://raw.githubusercontent.com/dynamo-pentester/dynamo-pentester/output/github-snake-dark.svg" />
+</picture>
+
+<br/>
+
+<img src="https://ghchart.rshah.org/00ff88/dynamo-pentester" alt="Contribution Chart" width="98%" />
+
+</div>
+
+---
+
+## 🏆 HALL OF FAME
+
+<div align="center">
+
+![IndiaSkills](https://img.shields.io/badge/🥇_IndiaSkills_2026-Medallion_of_Excellence-%230d1117?style=for-the-badge&labelColor=0d1117&color=00ff88)
+![CTF](https://img.shields.io/badge/🎯_Apoorv_CTF_2026-Rank_%2344_Worldwide-%230d1117?style=for-the-badge&labelColor=0d1117&color=00b4d8)
+![THM](https://img.shields.io/badge/🌍_TryHackMe-Top_5%25_Global-%230d1117?style=for-the-badge&labelColor=0d1117&color=7b2fff)
+
+<br/>
+
+<!-- Trophy widget activates as your account gains stars/commits/PRs over time -->
+<img src="https://github-profile-trophy.vercel.app/?username=dynamo-pentester&theme=matrix&no-frame=true&column=6&margin-w=8&margin-h=8&rank=SECRET,SSS,SS,S,AAA,AA,A,B" />
+
+</div>
+
+---
+
+## 🚀 FEATURED PROJECTS
+
+<div align="center">
+
+<a href="https://github.com/dynamo-pentester/mil-baster">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=dynamo-pentester&repo=mil-baster&theme=chartreuse-dark&bg_color=0d1117&border_color=00ff88&title_color=00b4d8&icon_color=00ff88&description_lines_count=2" />
+</a>
+<a href="https://github.com/dynamo-pentester/SecureSplit">
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=dynamo-pentester&repo=SecureSplit&theme=chartreuse-dark&bg_color=0d1117&border_color=00ff88&title_color=00b4d8&icon_color=00ff88&description_lines_count=2" />
+</a>
+
+</div>
+
+<br/>
+
+> ⚠️ **Add descriptions to your repos** — go to each repo → ⚙️ Settings → About → add a description, it'll show in the cards above!
+
+```
+┌──────────────────────────────────────────────────────────────────────────┐
+│  SENTINEL-X  │  Kernel rootkit detector — Linux LKM + Windows KMDF       │
+│              │  Blockchain-anchored forensic trail via Web3.py + Solidity │
+├──────────────────────────────────────────────────────────────────────────┤
+│  SECURESPLIT │  Visual cryptography — XOR-split shares + IPFS (Pinata)    │
+│              │  Neither share alone reveals the original. Ever.           │
+├──────────────────────────────────────────────────────────────────────────┤
+│  MATCARE     │  IoT maternal health — ESP32 vitals + ML + Ethereum ID     │
+│              │  Real-time dual-channel monitoring for mother & newborn    │
+└──────────────────────────────────────────────────────────────────────────┘
 ```
 
-### Windows (stages 1 and 3 — automated)
+---
 
-```powershell
-# As Administrator:
-powershell -ExecutionPolicy Bypass -File evaluation\run_windows_eval.ps1 -Runs 100 -Stage "1,3"
+## 🎯 CERTIFICATIONS
+
 ```
-
-### Windows Stage W2 (manual)
-
-W2 hooks `ZwQuerySystemInformation` to hide a target PID. PatchGuard detects the SSDT corruption and issues bugcheck 0x109, terminating the VM before the eval harness can record latency. Run it manually:
-
-```powershell
-# Open notepad, note its PID, then:
-reg add "HKLM\SYSTEM\CurrentControlSet\Services\sentinel_test\Parameters" /v TargetPid /t REG_DWORD /d <PID> /f
-powershell -ExecutionPolicy Bypass -File evaluation\run_windows_eval.ps1 -Runs 1 -Stage "2"
-# Detection recoverable from sentinel.db WAL after reboot
+[✓] Cisco Junior Cybersecurity Analyst ............... Cisco Networking Academy
+[✓] Certified AppSec Practitioner (CAP) .............. The SecOps Group
+[✓] Certified Network Security Practitioner (CNSP) ... The SecOps Group
+[✓] Ubuntu Linux Professional ........................ Canonical
+[✓] Microsoft Security Essentials (MSEP) ............. Microsoft
+[✓] Software Engineer Professional ................... HackerRank
 ```
 
 ---
 
-## Evidence Pipeline
+## 🏅 ACHIEVEMENTS
 
-Each detected event follows Algorithm 1 from the paper:
+<div align="center">
+
+| 🏆 Achievement | 📍 Details |
+|:---|:---|
+| 🥇 **IndiaSkills Southern Regionals 2026** | Medallion of Excellence — Cyber Security |
+| 🎯 **Apoorv CTF 2026** | Rank **#44 Worldwide** |
+| 🌍 **TryHackMe** | **Top 5% Global** Ranking |
+
+</div>
+
+---
+
+## 💼 EXPERIENCE
 
 ```
-event_json  →  ECDSA-P256 sign  →  AES-256-GCM encrypt
-            →  SHA-256 leaf hash  →  Merkle tree (batch 32)
-            →  Sepolia smart contract anchor (root hash)
-            →  SQLite persist (encrypted blob + proof)
+┌─────────────────────────────────────────────────────────────────────────┐
+│  Alcatel-Lucent Enterprise (ALE India Pvt. Ltd.)      July–Aug 2025     │
+│  Software Development Intern                           Bangalore, India  │
+├─────────────────────────────────────────────────────────────────────────┤
+│  ◈ Built FastAPI log analysis platform for AOS switch & HMON datasets   │
+│  ◈ Automated ingestion from nested TAR archives → structured JSON        │
+│  ◈ Plotly dashboards for CPU, memory & fan telemetry across 10K+ logs   │
+└─────────────────────────────────────────────────────────────────────────┘
 ```
 
-Any third party can verify a record without accessing raw data by recomputing the Merkle inclusion path from the stored leaf hash and checking the root against the on-chain anchor.
-
 ---
 
-## Configuration
+<div align="center">
 
-Copy `.env.example` to `.env` and fill in:
+<img src="https://capsule-render.vercel.app/api?type=waving&height=140&color=0:00ff88,50:00d4ff,100:7b2fff&section=footer&reversal=true" />
 
-| Variable | Description |
-|----------|-------------|
-| `SENTINEL_NODE_ID` | Node identifier for evidence signing |
-| `INFURA_SEPOLIA_URL` | Alchemy/Infura Sepolia RPC endpoint |
-| `PRIVATE_KEY` | Ethereum wallet private key (hex, no 0x) |
-| `ACCOUNT` | Ethereum wallet address |
-| `CONTRACT_ADDR` | Deployed MILBASTERLog contract address |
-| `ANCHOR_BATCH_SIZE` | Events per Merkle batch (default: 32) |
-| `ANCHOR_INTERVAL` | Anchor worker interval in seconds (default: 60) |
+<img src="https://komarev.com/ghpvc/?username=dynamo-pentester&style=for-the-badge&color=00ff88&labelColor=0d1117&label=PROFILE+VIEWS" />
 
-**Never commit `.env` or `keystore/*_priv.pem` to version control.**
+<br/><br/>
 
----
+*"The quieter you become, the more you are able to hear."*
 
-## Limitations
-
-- **DKOM false positives (2.0%):** `do_task_dead()` bypasses the `do_exit` kprobe. Fix (kprobe on `do_task_dead` with PID-namespace cross-referencing) is in progress.
-- **Scan-cycle inflation under load:** `guard_tick()` iterates 595 symbols; under VirtualBox CPU contention the effective cycle can reach 22–27 s. Splitting the watchlist into smaller scheduled work items is planned.
-- **Data-only sub-interval attacks:** An attack that modifies kernel data structures without invoking any kprobe-instrumented function and completes before the next periodic tick evades both layers. This is a fundamental constraint shared by all software-only kernel monitors.
-- **Self-targeting adversary:** A Ring-0 adversary who patches SENTINEL-X's own kprobe handler memory can disable detection. Outside the stated threat model.
-
----
-
-## Security Notice
-
-The test rootkits (`rootkit-test/`, `sentinel-test-windows/`) are included **solely for evaluation purposes**. They run exclusively in isolated VMs with test signing enabled and are not intended for deployment on production systems. The Linux test rootkit is fully reversible via `rmmod`.
-
----
-
-## Acknowledgements
-
-Thanks to [MatheuZSecurity](https://github.com/MatheuZSecurity), founder of the Rootkit Researchers community and developer of the original Kernel Sentinel prototype, whose public work on kernel instrumentation techniques provided the architectural foundation for this system.
-
----
-
-## License
-
-Research prototype. See LICENSE for terms.
-
----
-
-## Citation
-
-```bibtex
-@article{rishikesh2026sentinelx,
-  title   = {{SENTINEL-X}: A Cross-Platform Kernel Integrity Monitor
-             with Verifiable Blockchain-Anchored Forensic Evidence},
-  author  = {Rishikesh, R},
-  journal = {(under review)},
-  year    = {2026}
-}
-```
+</div>
