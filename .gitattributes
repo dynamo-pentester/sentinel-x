@@ -1,0 +1,14 @@
+# ── GitHub Linguist overrides ─────────────────────────────────────────────────
+# Mark evaluation results as generated (excluded from language stats)
+evaluation/results/** linguist-generated
+
+# Mark kernel build artifacts as generated
+*.mod.c linguist-generated
+*.cmd linguist-generated
+
+# Mark setup script as not the primary language
+setup.sh linguist-detectable=false
+
+# Ensure C source is properly detected
+*.c linguist-language=C
+*.h linguist-language=C

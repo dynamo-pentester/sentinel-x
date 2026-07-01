@@ -35,6 +35,17 @@ build/
 Module.symvers
 modules.order
 *.cmd
+# Hidden dot-prefixed build files (kbuild generates these)
+.*\.cmd
+.*\.o
+.module-common.o
+
+# ── Binary assets & logs ─────────────────────────────────────────────────────
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.log
 
 # ── Windows build artifacts ───────────────────────────────────────────────────
 *.obj

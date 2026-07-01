@@ -1,1 +1,0 @@
-./sentinelx.o
